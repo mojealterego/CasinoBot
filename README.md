@@ -133,5 +133,5 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ### Etap 0.75 — ograniczona diagnostyka spektralna
 
 - **0.75a — Implemented, CI pending:** `casinobot/spectral_diagnostics.py` — metoda Jacobiego dla rzeczywistych macierzy symetrycznych, wartości i wektory własne, aproksymacja rzędu k, błąd Frobeniusa; `tests/test_spectral_diagnostics.py` — 8 testów. Nie jest to pełne SVD dowolnych macierzy ani certyfikowana numerycznie procedura.
-- **0.75b — To do:** SVD dla macierzy prostokątnych, niezależne porównanie numeryczne i testy kondycjonowania.
+- **0.75b — Zaimplementowano:** `casinobot/rectangular_svd.py` i 9 testów. SVD prostokątnych macierzy metodą Grama; testy lokalne 9/9, CI niepotwierdzone. Stabilność numeryczna dla źle uwarunkowanych macierzy wymaga dalszej walidacji.
 - **0.76 — To do:** integracja z analizą ryzyka na syntetycznych danych, testy CI i benchmarki.
