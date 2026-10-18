@@ -19,6 +19,7 @@ Python 3.11+, bez zewnętrznych zależności.
 - `casinobot/paired.py`: sparowane porównania strategii z Common Random Numbers.
 - `casinobot/bootstrap.py`: bootstrap RTP i diagnostyka koncentracji wypłat.
 - `casinobot/reasoning.py`: dokładne rachunki wymierne, weryfikacja modeli skończonych i poszukiwanie kontrprzykładów.
+- `casinobot/titans_memory.py`: prototyp pamięci diagnostycznej z metryką niespodzianki i bramką wygaszania.
 - `casinobot/__main__.py`: CLI JSON.
 - `casinobot/core.py`: zachowany starszy interfejs API.
 - `docs/MATHEMATICAL_SOURCE_AUDIT.md`: źródłowa analiza matematyczna TRS, ograniczenia i mapa dalszej pracy.
@@ -44,6 +45,8 @@ Python 3.11+, bez zewnętrznych zależności.
 
 | 0.13 | Matematyczny silnik rozumowania: rachunki dokładne, model checking i falsyfikacja | Implemented, CI pending |
 | 0.14 | Formalne specyfikacje gier, automatyczne odkrywanie hipotez i integracja z zewnętrznym proverem | To do |
+| 0.15 | Titans-inspired Surprise Memory i Weight Decay Gate | Prototype, CI pending |
+| 0.16 | Pełna neuronowa implementacja Titans, uczenie w czasie inferencji i testy ablacyjne | To do |
 
 ## Silnik rozumowania matematycznego
 
