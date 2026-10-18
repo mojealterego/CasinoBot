@@ -61,3 +61,9 @@ Python 3.11+, bez zewnętrznych zależności.
 ## Silnik rozumowania matematycznego
 
 `casinobot/reasoning.py` zapewnia weryfikację skończonych modeli na dokładnych ułamkach oraz ograniczone wyszukiwanie kontrprzykładów. Brak kontrprzykładu do zadanej głębokości **nie stanowi dowodu uniwersalnego**. Silnik nie jest połączony z Imandrą ani innym zewnętrznym systemem dowodowym; inspiracja formalną weryfikacją nie oznacza kompatybilności API. Matematyczne modele gier wymagają niezależnego potwierdzenia ich założeń.
+
+## Integracja dokumentów z 18.10.2026
+
+Nowe moduły: `casinobot/lottery_audit.py` i `casinobot/fairness.py`. Audyt źródeł: `docs/SOURCE_INTEGRATION_IMDP_CASINO.md`.
+
+Etapy 0.24–0.26: audyt źródeł, matematyka kombinatoryczna i referencyjna weryfikacja HMAC — kod zapisany, CI niepotwierdzone. Etapy 0.27–0.28: Dirichlet, walidacja i rozszerzone modele ryzyka — do wykonania.
