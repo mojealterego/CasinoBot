@@ -3,7 +3,7 @@
 Synthetic draws only. The comparison tests mathematical consistency, not
 casino randomness or predictive accuracy.
 """
-from math import isfinite
+from math import log
 from random import Random
 
 from casinobot.information_geometry import (
@@ -24,8 +24,8 @@ def bernoulli_calibration(*, p=0.4, q=0.45, samples=10000, seed=42):
     successes = sum(rng.random() < p for _ in range(samples))
     observed = successes / samples
     # Keep boundary observations valid: empirical p=0 or 1 is possible.
-    empirical_kl = (observed * __import__("math").log(observed / q) if observed else 0.0) + (
-        (1 - observed) * __import__("math").log((1 - observed) / (1 - q))
+    empirical_kl = (observed * log(observed / q) if observed else 0.0) + (
+        (1 - observed) * log((1 - observed) / (1 - q))
         if observed < 1 else 0.0
     )
     baseline = kl_divergence([p, 1 - p], [q, 1 - q])
