@@ -16,6 +16,8 @@ Python 3.11+, bez zewnętrznych zależności.
 - `casinobot/model.py`: syntetyczny rozkład wypłat o zadanej wartości oczekiwanej.
 - `casinobot/engine.py`: księgowanie w groszach, ograniczenie strat, eksperymenty Monte Carlo.
 - `casinobot/statistics.py`: empiryczne RTP, przedział ufności przy założeniu IID, KL i Wasserstein-1.
+- `casinobot/paired.py`: sparowane porównania strategii z Common Random Numbers.
+- `casinobot/bootstrap.py`: bootstrap RTP i diagnostyka koncentracji wypłat.
 - `casinobot/__main__.py`: CLI JSON.
 - `casinobot/core.py`: zachowany starszy interfejs API.
 - `docs/MATHEMATICAL_SOURCE_AUDIT.md`: źródłowa analiza matematyczna TRS, ograniczenia i mapa dalszej pracy.
@@ -35,4 +37,6 @@ Python 3.11+, bez zewnętrznych zależności.
 | 0.07 | Event sourcing i replay | To do |
 | 0.08 | KL i Wasserstein-1, testy jednostkowe | Implemented, CI pending |
 | 0.09 | Inwentaryzacja matematyczna Tomów I–III TRS z odnośnikami do źródeł | In progress |
-| 0.10 | Bootstrap, diagnostyka ciężkich ogonów i walidacja modeli | To do |
+| 0.10 | Bootstrap RTP i diagnostyka koncentracji wypłat | Implemented, CI pending |
+| 0.11 | Porównania sparowane CRN | Implemented, CI pending |
+| 0.12 | Walidacja CI, pokrycia bootstrap i modeli ciężkoogonowych | To do |
