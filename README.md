@@ -93,3 +93,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Weryfikowalne potwierdzenia obliczeń — etap 0.45
 
 `casinobot/proof_receipts.py` implementuje deterministyczne potwierdzenia SHA-256 dla ograniczonych obwodów arytmetycznych i niezależne przeliczenie wyników. `tests/test_proof_receipts.py` dodaje testy poprawności i manipulacji. **Implemented, CI pending.** To nie jest kryptografia zero-knowledge ani zk-SNARK. Etap 0.46: prototyp prawdziwego ZK dla jednego obwodu z uznanym systemem dowodowym — To do. Etap 0.47: pomiar kosztów dowodzenia/weryfikacji i integracja z bramką mutacji — To do.
+
+## Wyżarzanie i scenariusze hipotetyczne — etapy 0.48–0.51
+
+0.48: `casinobot/annealing.py` — powtarzalne wyżarzanie symulowane, harmonogram temperatury i twarda bramka dopuszczalności kandydatów; **Implemented, CI pending**. 0.49: `casinobot/scenario_memory.py` — pamięć hipotetycznych scenariuszy z osobnymi czasami obowiązywania i zapisu oraz rankingiem podobieństwa; **Implemented, CI pending**. `tests/test_annealing_scenarios.py` obejmuje 6 testów. 0.50: integracja z MARS-X, Mutation Guard i potwierdzeniami obliczeń — To do. 0.51: trwałe przechowywanie, ocena jakości scenariuszy, ewaluacja poza próbą i ewentualne JEPA — To do. Symulacje nie są prognozami, a sugestie reakcji wymagają niezależnej walidacji. Nie uruchamiać nieograniczonego idle compute.
