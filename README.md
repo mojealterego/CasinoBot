@@ -73,3 +73,7 @@ Etapy 0.24–0.26: audyt źródeł, matematyka kombinatoryczna i referencyjna we
 `casinobot/active_inference.py` zawiera dyskretny model Bayesowski, oczekiwaną wolną energię (ryzyko KL + niejednoznaczność), zysk informacyjny oraz ranking eksperymentów. To prototyp matematyczny, **nie** implementacja JEPA, trening sieci neuronowej ani integracja z realnym środowiskiem. Nie wykonuje działań zewnętrznych.
 
 Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 0.30: sprzężenie z MARS-X, pamięcią Titans i audytem hipotez — To do. Etap 0.31: JEPA i model świata z ewaluacją poza próbą — To do.
+
+## Topological Data Analysis (TDA) — etap 0.32
+
+`casinobot/topology.py` implementuje ograniczony kompleks Vietorisa-Ripsa i liczby Bettiego beta0-beta2 nad F2, z przekrojami po promieniu. `tests/test_topology.py` zawiera testy geometrii i danych błędnych. **Implemented, CI pending.** To nie jest pełna homologia trwała ani wyznaczanie barcode'ów. Etap 0.33: rzeczywiste barcode'y trwałości i walidacja stabilności — To do. Etap 0.34: powiązanie hipotez topologicznych z Active Inference i audytem eksperymentów — To do. Struktury topologiczne nie stanowią same w sobie dowodu brakującej wiedzy.
