@@ -155,7 +155,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ### 0.84–0.89 — Dziewięć PDF dołączonych do strategii monet
 
 - **Inwentaryzacja wykonana:** `docs/NINE_PDF_SOURCE_INVENTORY.md` — mapa wszystkich 9 dokumentów, rozdzielenie twierdzeń zweryfikowanych od deklaracji TRS, zakres bezpiecznych integracji.
-- **0.84 — To do:** ograniczony SCOP/WMC na danych syntetycznych.
+- **0.84 — Implemented (bounded WMC), local 12/12, CI pending:** `casinobot/stochastic_constraints.py` oraz `tests/test_stochastic_constraints.py` — dokładne ważone zliczanie modeli CNF przy niezależnych zmiennych Bernoulliego (Fraction), limit 16 zmiennych domyślnie, bez prognozowania wyników kasyn. Pełny solver optymalizacji SCOP pozostaje do wykonania.
 - **0.85 — To do:** optymalizacja matematyczna i testy dopuszczalności.
 - **0.86 — To do:** walidacja statystyki, ML i przecieku danych.
 - **0.87 — To do:** testy spektralne macierzy i audyt postulatów TRS.
