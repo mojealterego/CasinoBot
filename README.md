@@ -129,3 +129,9 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 - **0.74 — Implemented, CI pending:** `casinobot/matrix_decompositions.py` implementuje ograniczony rozkład Cholesky'ego dla macierzy symetrycznych dodatnio określonych oraz nieobciążoną estymację kowariancji z obserwacji syntetycznych; `tests/test_matrix_decompositions.py` zawiera 8 testów jednostkowych. Nie implementuje SVD ani PCA; testy nie zostały jeszcze potwierdzone w CI.
 - **0.75 — To do:** stabilne numerycznie SVD i redukcja rzędu z walidacją błędu aproksymacji.
 - **0.76 — To do:** integracja diagnostyki macierzy z modułami statystycznymi i benchmarkami na danych syntetycznych.
+
+### Etap 0.75 — ograniczona diagnostyka spektralna
+
+- **0.75a — Implemented, CI pending:** `casinobot/spectral_diagnostics.py` — metoda Jacobiego dla rzeczywistych macierzy symetrycznych, wartości i wektory własne, aproksymacja rzędu k, błąd Frobeniusa; `tests/test_spectral_diagnostics.py` — 8 testów. Nie jest to pełne SVD dowolnych macierzy ani certyfikowana numerycznie procedura.
+- **0.75b — To do:** SVD dla macierzy prostokątnych, niezależne porównanie numeryczne i testy kondycjonowania.
+- **0.76 — To do:** integracja z analizą ryzyka na syntetycznych danych, testy CI i benchmarki.
