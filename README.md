@@ -22,6 +22,7 @@ Python 3.11+, bez zewnętrznych zależności.
 - `casinobot/titans_memory.py`: prototyp pamięci diagnostycznej z metryką niespodzianki i bramką wygaszania.
 - `casinobot/mars_x.py`: ograniczona ewolucyjna eksploracja hipotez z deterministyczną zaporą niezmienników.
 - `casinobot/math_models.py`: matematyczne prymitywy Béziera, Fittsa, entropii, agregacji logiki rozmytej i ROI.
+- `casinobot/omni_core.py`: typowany stan OmniCognitiveState, referencje SASOS i odwracalne archiwum R3Mem.
 - `casinobot/__main__.py`: CLI JSON.
 - `casinobot/core.py`: zachowany starszy interfejs API.
 - `docs/MATHEMATICAL_SOURCE_AUDIT.md`: źródłowa analiza matematyczna TRS, ograniczenia i mapa dalszej pracy.
@@ -53,6 +54,9 @@ Python 3.11+, bez zewnętrznych zależności.
 | 0.18 | CWM, pełne MCTS, LTN, ImandraX/CodeLogician i AlphaEvolve — rzeczywiste integracje | To do |
 | 0.19 | Modele Béziera, Fittsa, entropii, fuzzy-LTN i ROI — prymitywy laboratoryjne | Implemented, CI pending |
 | 0.20 | Integracja modeli matematycznych z orkiestracją MARS-X i walidacja | To do |
+| 0.21 | OmniCognitiveState + R3Mem (BLAKE2b, zlib, integralność) | Prototype, CI pending |
+| 0.22 | LangGraph + SASOS persistence + OmniDaemon orchestration | To do |
+| 0.23 | Integracja pełnej neuronowej pamięci Titans ze stanem i grafem | To do |
 
 ## Silnik rozumowania matematycznego
 
