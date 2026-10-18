@@ -89,3 +89,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Weryfikacja mutacji — etap 0.42
 
 `casinobot/mutation_guard.py`: ograniczona eksploracja skończonych systemów przejść, stany zabronione, wykrywanie cykli, trzy werdykty accepted/rejected/inconclusive. `tests/test_mutation_guard.py`: pięć testów. **Implemented, CI pending.** Etap 0.43: fail-closed gate przed wdrożeniem zmian w MARS-X — To do. Etap 0.44: TLA+/SMT (Z3), kontrprzykłady i modelowanie współbieżności — To do. Ten moduł nie dowodzi bezpieczeństwa dowolnego kodu i nie uruchamia wygenerowanych mutacji.
+
+## Weryfikowalne potwierdzenia obliczeń — etap 0.45
+
+`casinobot/proof_receipts.py` implementuje deterministyczne potwierdzenia SHA-256 dla ograniczonych obwodów arytmetycznych i niezależne przeliczenie wyników. `tests/test_proof_receipts.py` dodaje testy poprawności i manipulacji. **Implemented, CI pending.** To nie jest kryptografia zero-knowledge ani zk-SNARK. Etap 0.46: prototyp prawdziwego ZK dla jednego obwodu z uznanym systemem dowodowym — To do. Etap 0.47: pomiar kosztów dowodzenia/weryfikacji i integracja z bramką mutacji — To do.
