@@ -97,3 +97,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Wyżarzanie i scenariusze hipotetyczne — etapy 0.48–0.51
 
 0.48: `casinobot/annealing.py` — powtarzalne wyżarzanie symulowane, harmonogram temperatury i twarda bramka dopuszczalności kandydatów; **Implemented, CI pending**. 0.49: `casinobot/scenario_memory.py` — pamięć hipotetycznych scenariuszy z osobnymi czasami obowiązywania i zapisu oraz rankingiem podobieństwa; **Implemented, CI pending**. `tests/test_annealing_scenarios.py` obejmuje 6 testów. 0.50: integracja z MARS-X, Mutation Guard i potwierdzeniami obliczeń — To do. 0.51: trwałe przechowywanie, ocena jakości scenariuszy, ewaluacja poza próbą i ewentualne JEPA — To do. Symulacje nie są prognozami, a sugestie reakcji wymagają niezależnej walidacji. Nie uruchamiać nieograniczonego idle compute.
+
+## Obliczenia hiperwymiarowe — etapy 0.52–0.54
+
+0.52: `casinobot/hypervectors.py` — binarne hiperwektory VSA/HDC, XOR, majority bundling, Hamming retrieval; `tests/test_hypervectors.py` (6 testów). **Implemented, CI pending.** 0.53: benchmark odporności na szum i kolizji na syntetycznych korpusach — To do. 0.54: integracja pamięci symbolicznej z grafem semantycznym i porównanie z embeddingami — To do. HDC nie gwarantuje odporności na 30% błędów dla dowolnej liczby pojęć ani nie stanowi bezstratnego zamiennika Transformerów.
