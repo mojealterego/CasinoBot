@@ -121,5 +121,5 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Etap 0.71 — audyt TRS i geometria informacji
 
 - **0.71 — Implemented, CI pending:** `casinobot/information_geometry.py` (Fisher–Rao, Bernoulli KL, lokalne rozwinięcie KL), `tests/test_information_geometry.py` (8 testów), `docs/TRS_INFORMATION_GEOMETRY_AUDIT.md` (krytyczny audyt źródeł TRS).
-- **0.72 — To do:** benchmark na syntetycznych strumieniach Bernoulliego, porównanie z `statistics.py`, potwierdzenie GitHub Actions.
+- **0.72 — Implemented, CI pending:** `casinobot/geometry_benchmark.py` (deterministyczna kalibracja Bernoulliego, zgodność KL z `statistics.py`, odległość Fishera–Rao i błąd estymacji), `tests/test_geometry_benchmark.py` (7 testów). Potwierdzenie GitHub Actions nadal wymagane.
 - **0.73 — To do:** formalne kontrprzykłady do nieuprawnionych uogólnień topologicznych TRS; nie traktować deklaracji P≠NP/RH/Hodge jako udowodnionych.
