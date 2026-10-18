@@ -21,6 +21,7 @@ Python 3.11+, bez zewnętrznych zależności.
 - `casinobot/reasoning.py`: dokładne rachunki wymierne, weryfikacja modeli skończonych i poszukiwanie kontrprzykładów.
 - `casinobot/titans_memory.py`: prototyp pamięci diagnostycznej z metryką niespodzianki i bramką wygaszania.
 - `casinobot/mars_x.py`: ograniczona ewolucyjna eksploracja hipotez z deterministyczną zaporą niezmienników.
+- `casinobot/math_models.py`: matematyczne prymitywy Béziera, Fittsa, entropii, agregacji logiki rozmytej i ROI.
 - `casinobot/__main__.py`: CLI JSON.
 - `casinobot/core.py`: zachowany starszy interfejs API.
 - `docs/MATHEMATICAL_SOURCE_AUDIT.md`: źródłowa analiza matematyczna TRS, ograniczenia i mapa dalszej pracy.
@@ -50,6 +51,8 @@ Python 3.11+, bez zewnętrznych zależności.
 | 0.16 | Pełna neuronowa implementacja Titans, uczenie w czasie inferencji i testy ablacyjne | To do |
 | 0.17 | MARS-X: ograniczona ewolucja hipotez i hard-invariant firewall | Prototype, CI pending |
 | 0.18 | CWM, pełne MCTS, LTN, ImandraX/CodeLogician i AlphaEvolve — rzeczywiste integracje | To do |
+| 0.19 | Modele Béziera, Fittsa, entropii, fuzzy-LTN i ROI — prymitywy laboratoryjne | Implemented, CI pending |
+| 0.20 | Integracja modeli matematycznych z orkiestracją MARS-X i walidacja | To do |
 
 ## Silnik rozumowania matematycznego
 
