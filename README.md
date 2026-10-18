@@ -141,3 +141,8 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 - **Implemented, local tests 7/7, CI pending:** `casinobot/lotto_csv_audit.py`, `tests/test_lotto_csv_audit.py`. Normalizacja kolejności liczb, kontrola identyfikatorów, dat i zakresów, porównanie dwóch archiwów oraz SHA-256.
 - **Wynik audytu dostarczonych plików (nie kopiowano CSV do repo):** 7297 rekordów w każdym, 7295 zgodnych. ID 1153 (25.04.1976): `lotto.csv` ma 35, a `lotto_niesortowane.csv` ma 34; ID 4323: identyczne liczby, lecz daty 10.09.2006 vs 09.09.2006. Oba konflikty wymagają sprawdzenia w niezależnym źródle.
 - **0.79 — To do:** niezależna walidacja dwóch konfliktów, wersjonowanie źródeł, benchmark chronologiczny bez wycieku danych; brak roszczeń o przewidywanie uczciwego losowania.
+
+### 0.80 — Weryfikator systemów skróconych (covering designs)
+
+- **Implemented, CI pending:** `casinobot/covering_designs.py`, `tests/test_covering_designs.py` (7 przypadków). Dokładne sprawdzanie pokrycia wszystkich t-elementowych podzbiorów wybranego zbioru v przez k-elementowe zakłady; walidacja niepowtarzalności liczb i zakładów, ograniczenie złożoności oraz kontrprzykład niepokrytej kombinacji. Gwarancja warunkowa, nie predykcja wyniku losowania.
+- **0.81 — To do:** import systemów ze źródeł internetowych, sprawdzanie deklarowanych gwarancji na oryginalnych zestawach, oddzielny model kosztów z datą obowiązywania taryfy. Źródła: https://jakwygracwlottoprzezinternet.pl/systemy-skrocone/ oraz https://e-play.pl/systemy-lotto/ . Artykuł E-PLAY zawiera niepoprawny zakład z powtórzoną liczbą 6; należy go odrzucić. Ceny historyczne 3 zł nie są aktualne po zmianie 18.08.2026 (5 zł Lotto, 6 zł z Plus).
