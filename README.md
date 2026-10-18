@@ -67,3 +67,9 @@ Python 3.11+, bez zewnętrznych zależności.
 Nowe moduły: `casinobot/lottery_audit.py` i `casinobot/fairness.py`. Audyt źródeł: `docs/SOURCE_INTEGRATION_IMDP_CASINO.md`.
 
 Etapy 0.24–0.26: audyt źródeł, matematyka kombinatoryczna i referencyjna weryfikacja HMAC — kod zapisany, CI niepotwierdzone. Etapy 0.27–0.28: Dirichlet, walidacja i rozszerzone modele ryzyka — do wykonania.
+
+## Active Inference — laboratorium offline
+
+`casinobot/active_inference.py` zawiera dyskretny model Bayesowski, oczekiwaną wolną energię (ryzyko KL + niejednoznaczność), zysk informacyjny oraz ranking eksperymentów. To prototyp matematyczny, **nie** implementacja JEPA, trening sieci neuronowej ani integracja z realnym środowiskiem. Nie wykonuje działań zewnętrznych.
+
+Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 0.30: sprzężenie z MARS-X, pamięcią Titans i audytem hipotez — To do. Etap 0.31: JEPA i model świata z ewaluacją poza próbą — To do.
