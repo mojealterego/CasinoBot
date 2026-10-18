@@ -77,3 +77,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Topological Data Analysis (TDA) — etap 0.32
 
 `casinobot/topology.py` implementuje ograniczony kompleks Vietorisa-Ripsa i liczby Bettiego beta0-beta2 nad F2, z przekrojami po promieniu. `tests/test_topology.py` zawiera testy geometrii i danych błędnych. **Implemented, CI pending.** To nie jest pełna homologia trwała ani wyznaczanie barcode'ów. Etap 0.33: rzeczywiste barcode'y trwałości i walidacja stabilności — To do. Etap 0.34: powiązanie hipotez topologicznych z Active Inference i audytem eksperymentów — To do. Struktury topologiczne nie stanowią same w sobie dowodu brakującej wiedzy.
+
+## Interpretowalność reprezentacji — etap 0.35
+
+`casinobot/sparse_features.py` zawiera eksperymentalne nieujemne kodowanie rzadkie przy stałym słowniku i karze L1; `tests/test_sparse_features.py` testuje rekonstrukcję, regularizację i walidację. **Implemented, CI pending.** Etap 0.36: uczenie słownika SAE na danych syntetycznych i walidacja na zbiorze testowym — To do. Etap 0.37: analiza aktywacji modelu za zgodą operatora i ewaluacja interpretowalności — To do. Samo L1 nie dowodzi monosemantyczności i nie eliminuje halucynacji.
