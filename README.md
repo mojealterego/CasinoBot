@@ -105,3 +105,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Hybrydowe obliczenia kwantowe — etapy 0.55–0.58
 
 0.55: `casinobot/quantum_lab.py` — QUBO, dokładny klasyczny solver (n <= 16), referencyjny OpenQASM 2.0 wyłącznie do próbkowania i ocena dispatchu; `tests/test_quantum_lab.py` (6 testów). **Implemented, CI pending.** 0.56: QAOA z rzeczywistym operatorem kosztu, symulator i porównanie z optimum klasycznym — To do. 0.57: adapter QPU z limitami budżetu, kolejką, uwierzytelnieniem i audytem — To do. 0.58: benchmark jakości, kosztów, błędów i opóźnień wobec metod klasycznych — To do. Obecny QASM nie koduje funkcji celu QUBO, a kod nie komunikuje się z fizycznym QPU.
+
+## Symulacje cyfrowych bliźniaków i FPGA — etapy 0.59–0.62
+
+0.59: `casinobot/digital_twin.py` — deterministyczna, ograniczona symulacja zdarzeń i bramka oceny kandydatów; `tests/test_digital_twin.py` (6 testów). **Implemented, CI pending.** 0.60: zagnieżdżone scenariusze awarii, odtwarzanie syntetycznych śladów i metryki stabilności — To do. 0.61: izolowane środowiska kontenerowe, testy awarii i porównanie czasu wirtualnego z rzeczywistym — To do. 0.62: opcjonalny HLS/FPGA z walidacją równoważności i bezpiecznym rollbackiem — To do. Obecny moduł nie implementuje ROS/Gazebo, JEPA, sprzętowego FPGA ani fizycznego przyspieszania czasu.
