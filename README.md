@@ -151,3 +151,14 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 
 - **Implemented, CI pending:** `casinobot/coin_sequence_risk.py` oraz `tests/test_coin_sequence_risk.py` (6 testów). Trzy bazy przepisane z fotografii; analiza deterministycznej maksymalnej straty dla trzech przegranych obrotów na każdym poziomie: I = 2163, II = 9657, III = 33447 jednostek. Obliczenia nie są prognozą, nie modelują reguł wyjątków ani losowych przejść poziomów. Oczekiwany wynik przy zadanym hipotetycznym RTP dotyczy wyłącznie z góry ustalonego harmonogramu stawek. Wyniki CI niezweryfikowane.
 - **0.83 — To do:** formalny automat stanów z niejednoznacznymi regułami przejść wyjaśnionymi na podstawie źródła, testy symulacyjne wyłącznie offline i walidacja ryzyka utraty budżetu.
+
+### 0.84–0.89 — Dziewięć PDF dołączonych do strategii monet
+
+- **Inwentaryzacja wykonana:** `docs/NINE_PDF_SOURCE_INVENTORY.md` — mapa wszystkich 9 dokumentów, rozdzielenie twierdzeń zweryfikowanych od deklaracji TRS, zakres bezpiecznych integracji.
+- **0.84 — To do:** ograniczony SCOP/WMC na danych syntetycznych.
+- **0.85 — To do:** optymalizacja matematyczna i testy dopuszczalności.
+- **0.86 — To do:** walidacja statystyki, ML i przecieku danych.
+- **0.87 — To do:** testy spektralne macierzy i audyt postulatów TRS.
+- **0.88 — To do:** izolowane, audytowalne agenty defensywne, bez autonomicznej ofensywy.
+- **0.89 — To do:** automat stanów strategii monet po doprecyzowaniu znaczenia symboli.
+- **CI:** brak potwierdzonych run ID dla nowych etapów.
