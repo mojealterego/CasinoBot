@@ -81,3 +81,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Interpretowalność reprezentacji — etap 0.35
 
 `casinobot/sparse_features.py` zawiera eksperymentalne nieujemne kodowanie rzadkie przy stałym słowniku i karze L1; `tests/test_sparse_features.py` testuje rekonstrukcję, regularizację i walidację. **Implemented, CI pending.** Etap 0.36: uczenie słownika SAE na danych syntetycznych i walidacja na zbiorze testowym — To do. Etap 0.37: analiza aktywacji modelu za zgodą operatora i ewaluacja interpretowalności — To do. Samo L1 nie dowodzi monosemantyczności i nie eliminuje halucynacji.
+
+## Graf semantyczny — etap 0.38
+
+`casinobot/semantic_graph.py`: kanoniczne definicje pojęć, zależności, wersjonowanie optymistyczne, skróty SHA-256 i wykrywanie nieaktualnych referencji. `tests/test_semantic_graph.py`: testy referencji, aktualizacji, konfliktów i izolacji kopii. **Implemented, CI pending.** Etap 0.39: integracja grafu z OmniCognitiveState, Active Inference i MARS-X — To do. Etap 0.40: trwałe transakcje, audyt zdarzeń i rozproszona spójność — To do. Etap 0.41: ewaluacja GNN i uwagi grafowej na danych badawczych — To do. Nie jest to splątanie kwantowe ani automatyczna propagacja bez kosztu obliczeń.
