@@ -1,22 +1,21 @@
+"""Offline CasinoBot command-line research interface."""
 import argparse
 import json
-from dataclasses import asdict
-from decimal import Decimal
-from .core import Config, simulate
+from .engine import SessionConfig, run_experiment
+from .model import PayoutModel
 
-def main():
-    p = argparse.ArgumentParser(description="Offline CasinoBot simulator")
-    p.add_argument("--rounds", type=int, default=1000)
-    p.add_argument("--seed", type=int, default=42)
-    p.add_argument("--stake", type=Decimal, default=Decimal("1"))
-    args = p.parse_args()
-    cfg = Config(max_rounds=args.rounds, seed=args.seed, stake=args.stake)
-    result = simulate(cfg)
-    print(json.dumps({**{k: str(v) if isinstance(v, Decimal) else v
-                        for k, v in asdict(result).items()},
-                      "observed_rtp": result.observed_rtp,
-                      "theoretical_rtp": cfg.payout_probability * float(cfg.payout_multiplier)},
-                     indent=2))
+def main() -> None:
+    parser = argparse.ArgumentParser(description="CasinoBot offline research")
+    parser.add_argument("--sessions", type=int, default=1000)
+    parser.add_argument("--rounds", type=int, default=100)
+    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--stake-cents", type=int, default=100)
+    parser.add_argument("--bankroll-cents", type=int, default=20000)
+    parser.add_argument("--max-loss-cents", type=int, default=4000)
+    parser.add_argument("--rtp-bps", type=int, default=9659)
+    args = parser.parse_args()
+    config = SessionConfig(args.bankroll_cents, args.stake_cents, args.rounds, args.max_loss_cents)
+    print(json.dumps(run_experiment(config, PayoutModel(args.rtp_bps), args.sessions, args.seed), indent=2))
 
 if __name__ == "__main__":
     main()
