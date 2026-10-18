@@ -101,3 +101,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Obliczenia hiperwymiarowe — etapy 0.52–0.54
 
 0.52: `casinobot/hypervectors.py` — binarne hiperwektory VSA/HDC, XOR, majority bundling, Hamming retrieval; `tests/test_hypervectors.py` (6 testów). **Implemented, CI pending.** 0.53: benchmark odporności na szum i kolizji na syntetycznych korpusach — To do. 0.54: integracja pamięci symbolicznej z grafem semantycznym i porównanie z embeddingami — To do. HDC nie gwarantuje odporności na 30% błędów dla dowolnej liczby pojęć ani nie stanowi bezstratnego zamiennika Transformerów.
+
+## Hybrydowe obliczenia kwantowe — etapy 0.55–0.58
+
+0.55: `casinobot/quantum_lab.py` — QUBO, dokładny klasyczny solver (n <= 16), referencyjny OpenQASM 2.0 wyłącznie do próbkowania i ocena dispatchu; `tests/test_quantum_lab.py` (6 testów). **Implemented, CI pending.** 0.56: QAOA z rzeczywistym operatorem kosztu, symulator i porównanie z optimum klasycznym — To do. 0.57: adapter QPU z limitami budżetu, kolejką, uwierzytelnieniem i audytem — To do. 0.58: benchmark jakości, kosztów, błędów i opóźnień wobec metod klasycznych — To do. Obecny QASM nie koduje funkcji celu QUBO, a kod nie komunikuje się z fizycznym QPU.
