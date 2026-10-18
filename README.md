@@ -135,3 +135,9 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 - **0.75a — Implemented, CI pending:** `casinobot/spectral_diagnostics.py` — metoda Jacobiego dla rzeczywistych macierzy symetrycznych, wartości i wektory własne, aproksymacja rzędu k, błąd Frobeniusa; `tests/test_spectral_diagnostics.py` — 8 testów. Nie jest to pełne SVD dowolnych macierzy ani certyfikowana numerycznie procedura.
 - **0.75b — Zaimplementowano:** `casinobot/rectangular_svd.py` i 9 testów. SVD prostokątnych macierzy metodą Grama; testy lokalne 9/9, CI niepotwierdzone. Stabilność numeryczna dla źle uwarunkowanych macierzy wymaga dalszej walidacji.
 - **0.76 — To do:** integracja z analizą ryzyka na syntetycznych danych, testy CI i benchmarki.
+
+### 0.78 — Audyt integralności archiwów Lotto 6/49
+
+- **Implemented, local tests 7/7, CI pending:** `casinobot/lotto_csv_audit.py`, `tests/test_lotto_csv_audit.py`. Normalizacja kolejności liczb, kontrola identyfikatorów, dat i zakresów, porównanie dwóch archiwów oraz SHA-256.
+- **Wynik audytu dostarczonych plików (nie kopiowano CSV do repo):** 7297 rekordów w każdym, 7295 zgodnych. ID 1153 (25.04.1976): `lotto.csv` ma 35, a `lotto_niesortowane.csv` ma 34; ID 4323: identyczne liczby, lecz daty 10.09.2006 vs 09.09.2006. Oba konflikty wymagają sprawdzenia w niezależnym źródle.
+- **0.79 — To do:** niezależna walidacja dwóch konfliktów, wersjonowanie źródeł, benchmark chronologiczny bez wycieku danych; brak roszczeń o przewidywanie uczciwego losowania.
