@@ -85,3 +85,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Graf semantyczny — etap 0.38
 
 `casinobot/semantic_graph.py`: kanoniczne definicje pojęć, zależności, wersjonowanie optymistyczne, skróty SHA-256 i wykrywanie nieaktualnych referencji. `tests/test_semantic_graph.py`: testy referencji, aktualizacji, konfliktów i izolacji kopii. **Implemented, CI pending.** Etap 0.39: integracja grafu z OmniCognitiveState, Active Inference i MARS-X — To do. Etap 0.40: trwałe transakcje, audyt zdarzeń i rozproszona spójność — To do. Etap 0.41: ewaluacja GNN i uwagi grafowej na danych badawczych — To do. Nie jest to splątanie kwantowe ani automatyczna propagacja bez kosztu obliczeń.
+
+## Weryfikacja mutacji — etap 0.42
+
+`casinobot/mutation_guard.py`: ograniczona eksploracja skończonych systemów przejść, stany zabronione, wykrywanie cykli, trzy werdykty accepted/rejected/inconclusive. `tests/test_mutation_guard.py`: pięć testów. **Implemented, CI pending.** Etap 0.43: fail-closed gate przed wdrożeniem zmian w MARS-X — To do. Etap 0.44: TLA+/SMT (Z3), kontrprzykłady i modelowanie współbieżności — To do. Ten moduł nie dowodzi bezpieczeństwa dowolnego kodu i nie uruchamia wygenerowanych mutacji.
