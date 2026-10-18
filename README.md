@@ -113,3 +113,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Dowody, intencje i analiza awarii — etapy 0.63–0.67
 
 0.63: `casinobot/evidence_reasoning.py` — oceny częstotliwości i pewności inspirowane NARS, rozróżnienie dowodów niezależnych i wykrywanie konfliktów; **Implemented, CI pending**. 0.64: `casinobot/retrospective.py` — ograniczone przypisywanie kar do wcześniejszych decyzji po symulowanej awarii; **Implemented, CI pending**. `tests/test_evidence_retrospective.py` zawiera 8 testów. 0.65: jawne preferencje i zatwierdzanie przez operatora zamiast domniemanej CEV — To do. 0.66: integracja ocen z Mutation Guard, Digital Twin i pamięcią scenariuszy — To do. 0.67: testy odporności na zatrucie dowodów i kalibracji — To do. Moduły nie są pełnym NARS, CIRL, BPTT ani retrokauzalnością; nie zastępują niezależnych zabezpieczeń.
+
+## Zintegrowana bramka oceny propozycji — etap 0.68
+
+0.68: `casinobot/proposal_gate.py` — integracja Mutation Guard, Digital Twin, Evidence Reasoning i retrospektywnych kar. Status **Implemented, CI pending**; `tests/test_proposal_gate.py` (9 testów). Wszystkie bramki fail-closed, a pozytywny wynik oznacza tylko `eligible_for_human_review`, nigdy automatyczne wdrożenie. Następnie: 0.69 — podpisane zatwierdzenie operatora i audyt decyzji (To do); 0.70 — testy odporności na błędne i sprzeczne dowody, pełna walidacja CI (To do).
