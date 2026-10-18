@@ -109,3 +109,7 @@ Etap 0.29: dyskretne Active Inference i testy — Implemented, CI pending. Etap 
 ## Symulacje cyfrowych bliźniaków i FPGA — etapy 0.59–0.62
 
 0.59: `casinobot/digital_twin.py` — deterministyczna, ograniczona symulacja zdarzeń i bramka oceny kandydatów; `tests/test_digital_twin.py` (6 testów). **Implemented, CI pending.** 0.60: zagnieżdżone scenariusze awarii, odtwarzanie syntetycznych śladów i metryki stabilności — To do. 0.61: izolowane środowiska kontenerowe, testy awarii i porównanie czasu wirtualnego z rzeczywistym — To do. 0.62: opcjonalny HLS/FPGA z walidacją równoważności i bezpiecznym rollbackiem — To do. Obecny moduł nie implementuje ROS/Gazebo, JEPA, sprzętowego FPGA ani fizycznego przyspieszania czasu.
+
+## Dowody, intencje i analiza awarii — etapy 0.63–0.67
+
+0.63: `casinobot/evidence_reasoning.py` — oceny częstotliwości i pewności inspirowane NARS, rozróżnienie dowodów niezależnych i wykrywanie konfliktów; **Implemented, CI pending**. 0.64: `casinobot/retrospective.py` — ograniczone przypisywanie kar do wcześniejszych decyzji po symulowanej awarii; **Implemented, CI pending**. `tests/test_evidence_retrospective.py` zawiera 8 testów. 0.65: jawne preferencje i zatwierdzanie przez operatora zamiast domniemanej CEV — To do. 0.66: integracja ocen z Mutation Guard, Digital Twin i pamięcią scenariuszy — To do. 0.67: testy odporności na zatrucie dowodów i kalibracji — To do. Moduły nie są pełnym NARS, CIRL, BPTT ani retrokauzalnością; nie zastępują niezależnych zabezpieczeń.
